@@ -11,7 +11,7 @@ const TodoForm = (props) => {
   }
   
   return (
-    <div>
+    <div className='inputtodo'>
       <form onSubmit={handleSubmit}>
         <input onChange={(e)=> setTextTodo(e.target.value)}/>
         <button className='todoSubmit'>Add Todo</button>

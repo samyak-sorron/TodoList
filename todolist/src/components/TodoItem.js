@@ -1,6 +1,6 @@
 import React from 'react'
 import {MdDeleteOutline} from 'react-icons/md'
-import {AiOutCheckCircle} from 'react-icons/ai'
+import {AiOutlineCheckCircle} from 'react-icons/ai'
 
 const TodoItem = (props) => {
   return (
@@ -8,7 +8,8 @@ const TodoItem = (props) => {
         <div>
             <h4>{props.text}</h4>
             <button onClick={()=> props.handleDelete(props.id)}><MdDeleteOutline/></button>
-            <button onClick={()=> props.handleDelete(props.id)}><AiOutCheckCircle/></button>
+            <button onClick={()=> props.handleDelete(props.id)}><AiOutlineCheckCircle/></button>
+            
         </div>
     </div>
   )

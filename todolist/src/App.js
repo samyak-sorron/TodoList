@@ -26,7 +26,7 @@ function App() {
   }
 
   const handleDelete=(id)=>{
-    const newTodos= todos.filter((e1)=> e1.id != id)
+    const newTodos= todos.filter((e1)=> e1.id !== id)
     setTodos(newTodos,...todos)
   }
 
