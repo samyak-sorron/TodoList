@@ -30,12 +30,13 @@ input{
 }
 
 .todoItem{
-    background: linear-gradient(to right,rgba(33, 82, 130, 0.2),rgba(33, 82, 130, 1)) ;
-    color: white;
+    background: linear-gradient(to right,rgb(86, 240, 145),rgb(51, 146, 240)) ;
+    color: whitesmoke;
     display: inline-block;
     width: 50%;
     padding: 20px;
     margin: 5px;
+    border-radius: 8px;
 }
 
 button:hover{
@@ -47,13 +48,17 @@ button:hover{
     float: right;
     margin: 5px;
     background: none;
-    color: white;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+    font-stretch: wider;
+    border: none;
 }
 
 .todoItem button:hover{
     size: 20px;
     color: red;
-    font-size: large;
+    font-size: larger;
 }
 
 h4{
