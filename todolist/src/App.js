@@ -57,13 +57,16 @@ function App() {
 
   console.log(todos)
   return (
+    
     <div className="App">
       <header className="App-header">
+        <i>made by Samyak</i>
         <h1>Todo Form</h1>
         <TodoForm addTodo={addTodo}/>
         {elements}
       </header>
     </div>
+    
   );
 }
 
