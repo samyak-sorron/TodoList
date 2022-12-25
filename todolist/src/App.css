@@ -65,3 +65,7 @@ h4{
     display: inline;
     padding: 10px;
 }
+
+.complete{
+    text-decoration: line-through;
+}

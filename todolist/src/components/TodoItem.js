@@ -6,9 +6,9 @@ const TodoItem = (props) => {
   return (
     <div className='todoItem'>
         <div>
-            <h4>{props.text}</h4>
+            <h4 className={props.complete? 'complete':'notcomplete'}>{props.text}</h4>
             <button onClick={()=> props.handleDelete(props.id)}><MdDeleteOutline/></button>
-            <button onClick={()=> props.handleDelete(props.id)}><AiOutlineCheckCircle/></button>
+            <button onClick={()=> props.handleComplete(props.id)}><AiOutlineCheckCircle/></button>
             
         </div>
     </div>

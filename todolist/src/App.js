@@ -20,6 +20,7 @@ function App() {
       text:text,
       id:id,
       key:id,
+      complete: false,
     }
 
     setTodos(()=>[newTodo, ...todos])
@@ -30,12 +31,26 @@ function App() {
     setTodos(newTodos,...todos)
   }
 
+  const handleComplete=(id)=>{
+    const updatedTodos=todos.map((e1)=>{
+      if(e1.id === id){
+        e1.complete = true
+      }
+      return e1;
+    })
+
+    setTodos(updatedTodos)
+  }
+
   const elements= todos.map((e1)=>(
     <TodoItem
     text={e1.text}
     id={e1.id}
     key={e1.key}
+    todo={e1}
+    complete={e1.complete}
     handleDelete={handleDelete}
+    handleComplete={handleComplete}
     />
     
   ))
